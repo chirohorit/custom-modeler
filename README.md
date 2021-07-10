@@ -11,6 +11,8 @@
 	* Provide endpoints for loading allowed data configured in database
 	* Provide list of backend service endpoints
 * Minimum Viable Modeler
+	* Finalize the list of notations to allow
+	* Identify the properties for each notation
 	* Load allowed properties for available tasks from mapping
 		* allow selection (with multiple)
 	* Set process properties
