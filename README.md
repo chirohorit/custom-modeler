@@ -3,20 +3,21 @@
 
 
 ## to-do list
-* Database
+* Database (MySQL)
 	* Users
 	* Roles
 	* Permissions
-* Data service API
+* Data service API (PHP-CRUD-API/db-to-api)
 	* Provide endpoints for loading allowed data configured in database
 	* Provide list of backend service endpoints
 * Web application
-	* Master data management
+	* Master data management (Adminer/PHP-CRUD-ADMIN and PHP-CRUD-UI)
 		* Create master data tables
 		* Populate master data tables
 		* Tables to load in modeler, exposed through Data service API
+		* Enable/Disable data for data service API
 		* Mapping of properties to tasks
-	* Integrate forms-js (read, render and store .fcfg files)
+	* Integrate Forms (read, render and store .fcfg files) (forms-js)
 		* Input types and constraints
 		* Pre-populated data from database
 		* Date and time fields
@@ -24,7 +25,7 @@
 	* User panel (UX concept)
 		* Interaction with tasks
 		* Create tasks
-* Minimum Viable Modeler
+* Minimum Viable Modeler (bpmn.io modeler)
 	* Finalize the list of notations to allow
 	* Identify the properties for each notation
 	* Load allowed properties for available tasks from mapping
@@ -35,7 +36,7 @@
 	* Deploy process to engine
 	* User tasks
 		* Select from .fcfg files
-* Workflow engine deployment
+* Workflow engine deployment (Camunda BPMN Engine)
 
 ## to-test list
 * 3 workflow samples
