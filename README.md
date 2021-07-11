@@ -10,6 +10,20 @@
 * Data service API
 	* Provide endpoints for loading allowed data configured in database
 	* Provide list of backend service endpoints
+* Web application
+	* Master data management
+		* Create master data tables
+		* Populate master data tables
+		* Tables to load in modeler, exposed through Data service API
+		* Mapping of properties to tasks
+	* Integrate forms-js (read, render and store .fcfg files)
+		* Input types and constraints
+		* Pre-populated data from database
+		* Date and time fields
+		* File upload field
+	* User panel (UX concept)
+		* Interaction with tasks
+		* Create tasks
 * Minimum Viable Modeler
 	* Finalize the list of notations to allow
 	* Identify the properties for each notation
@@ -22,19 +36,6 @@
 	* User tasks
 		* Select from .fcfg files
 * Workflow engine deployment
-* Web application (use UX concept)
-	* Master data management
-		* Create master data tables
-		* Populate master data tables
-		* Tables to load in modeler, exposed through Data service API
-		* Mapping of properties to tasks
-	* Integrate forms-js (read, render and store .fcfg files)
-		* Input types and constraints
-		* Pre-populated data from database
-		* Date and time fields
-		* File upload field
-	* Interaction with tasks
-	* Create tasks
 
 ## to-test list
 * 3 workflow samples
