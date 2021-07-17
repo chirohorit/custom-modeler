@@ -35,10 +35,11 @@
   "license": "MIT",
   "dependencies": {
     "bpmn-js": "^8.7.1",
-    "bpmn-js-properties-panel": "^0.42.0",
+    "bpmn-js-properties-panel": "^0.44.0",
     "camunda-bpmn-moddle": "^5.1.0",
     "jquery": "^3.5.1",
-    "min-dash": "^3.7.0"
+    "min-dash": "^3.7.0",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^7.0.0",

@@ -5,10 +5,18 @@ import { debounce } from 'min-dash';
 
 import propertiesPanelModule from 'bpmn-js-properties-panel';
 import propertiesProviderModule from 'bpmn-js-properties-panel/lib/provider/bpmn';
+
+import magicPropertiesProviderModule from './provider/magic';
+import magicModdleDescriptor from './descriptors/magic';
 //import camundaModdleDescriptor from 'camunda-bpmn-moddle/resources/camunda.json';
+
+/* var propertiesPanelModule = require ('./bpmn-js-properties-panel');
+var propertiesProviderModule = require ('./bpmn-js-properties-panel/lib/provider/bpmn'); */
 
 import diagramXML from '../resources/newDiagram.bpmn';
 
+/* var propertiesPanelModule = require ('bpmn-js-properties-panel');
+var propertiesProviderModule = require ('bpmn-js-properties-panel/lib/provider/bpmn'); */
 
 var container = $('#js-drop-zone');
 
@@ -21,16 +29,19 @@ var bpmnModeler = new BpmnModeler({
   },
   additionalModules: [
     propertiesPanelModule,
-    propertiesProviderModule
-  ]/* ,
+    propertiesProviderModule,
+	magicPropertiesProviderModule
+  ] ,
   moddleExtensions: {
-    camunda: camundaModdleDescriptor
-  } */
+	magic: magicModdleDescriptor
+    /* camunda: camundaModdleDescriptor */
+  }
 });
 container.removeClass('with-diagram');
 
 function createNewDiagram() {
-  openDiagram(diagramXML);
+	openDiagram(diagramXML);
+	
 }
 
 async function openDiagram(xml) {
